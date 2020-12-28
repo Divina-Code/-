@@ -1,22 +1,22 @@
 import random
-a = int(random.randint(0, 10))
+
 isGuessed = False
 
-while  isGuessed != True:
+num = random.randint(1, 10)
 
-    game = "\nугадай число от 0 до 10\n"
-
-    answer = input(game)
-
-    if answer < a:
-        print("Ваше число меньше загаданного, попробуйте ещё раз")
-    elif answer > a:
-        print("Ваше число больше загаданного, попробуйте ещё раз")
-    else:
-        print("Вы угадали")
+while isGuessed != True :
+    answer = int(input("Угадай число от одного до ста\n"))
+    if num == answer:
+        print ("Ты угадал, молодец")
         isGuessed = True
+    elif num > answer:
+        print ("Твоё число меньше загаданного")
+    elif answer == 0:
+        isGuessed = True
+    else:
+        print ("Твоё число больше загаданного")
 
-print("спасибо за игру")
+print ("Спасибо за игру")
 
 
 
