@@ -2,7 +2,7 @@ import random
 
 isGuessed = False
 
-num = random.randint(1, 10)
+num = random.randint(1, 100)
 
 while isGuessed != True :
     answer = int(input("Угадай число от одного до ста\n"))
