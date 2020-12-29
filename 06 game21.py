@@ -2,7 +2,7 @@ import random
 import colorama
 from colorama import Fore, Back, Style
 colorama.init()
-print(Fore.RED + 'Красный текст')
+print(Fore.GREEN + 'Зелёный текст')
 
 
 
@@ -37,9 +37,7 @@ while inGame1:
 colorama.init()
 print(Fore.BLUE + 'Синий текст')
 
-
 inGame2 = True
-
 
 player2 = random.randint(2, 11)
 player2Name = input("Введи своё имя  ")
@@ -59,13 +57,13 @@ while inGame2:
             inGame2 = False
         else:
             print("Я тебя не понял")
-        if player2 > 21:
-            print(player2Name+", ты проиграл")
-            inGame2 = False
-        elif player2 == 21:
-            print(player2Name+", Ты победил")
-if player1 > player2:
-    print("Победил, "+player1Name)
+
+if player1 <= 21 and player1>player2:
+    print(player2Name, "ты победил")
+elif player2 <=21 and player2>player1:
+    print(player2Name, "ты победил")
+elif player1 >21 and player2>21:
+    print("нет победителей")
 else:
-    print("Победил, "+player2Name)
+    print("Ничья")
 

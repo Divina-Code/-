@@ -6,7 +6,7 @@ slova = slova.split(" ")
 for slovo in slova:
     a = (slovo[::-1])
     if slovo == a:
-        print(slovo, " это палиндром")
-else:
-    print(slovo, "это не палиндром")
+        print(slovo, "это палиндром")
+    else:
+        print(slovo, "это не палиндром")
 
