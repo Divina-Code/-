@@ -1,4 +1,4 @@
-inList = False #продолжительность цикла
+inList = False 
 productlist = []
 while inList != True:
     answer = int(input("добавить продукт в список:[1], удалить:[2] или посмотреть весь список?:[3]  "))
