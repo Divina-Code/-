@@ -26,8 +26,9 @@ while game:
         elif answer == word:
             print("Ты выйграл")
             game = False
-    lives -= 1
-    print("теперь у тебя жизней = ", lives)
+    if answer != word[a]:
+        lives -= 1
+        print("теперь у тебя жизней = ", lives)
     if lives == 0:
         print("У тебя закончились жизни, ты проиграл")
         game = False
